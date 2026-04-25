@@ -9,6 +9,7 @@ interface ButtonProps {
   onClick?: () => void
   href?: string
   className?: string
+  style?: React.CSSProperties
   icon?: React.ReactNode
   target?: string
   rel?: string
@@ -21,6 +22,7 @@ export default function Button({
   onClick,
   href,
   className = '',
+  style,
   icon,
   target,
   rel,
@@ -58,7 +60,7 @@ export default function Button({
 
   if (href) {
     return (
-      <a href={href} className={classes} target={target} rel={rel}>
+      <a href={href} className={classes} style={style} target={target} rel={rel}>
         {icon && <span>{icon}</span>}
         {children}
       </a>
@@ -66,7 +68,7 @@ export default function Button({
   }
 
   return (
-    <button onClick={onClick} className={classes}>
+    <button onClick={onClick} className={classes} style={style}>
       {icon && <span>{icon}</span>}
       {children}
     </button>
