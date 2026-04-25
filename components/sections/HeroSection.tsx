@@ -38,8 +38,8 @@ export default function HeroSection() {
           style={{
             objectFit: 'cover',
             mixBlendMode: 'overlay',
-            opacity: 0.3,
-            filter: 'blur(2px) brightness(0.7)',
+            opacity: 0.6,
+            filter: 'brightness(0.8)',
           }}
           priority
         />
