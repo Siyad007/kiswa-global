@@ -68,7 +68,10 @@ export default function HeroSection() {
           bottom: 60,
           width: '42%',
           zIndex: 2,
-          opacity: 0.18,
+          opacity: 0.35,
+          mixBlendMode: 'multiply',
+          maskImage: 'radial-gradient(ellipse at center right, black 20%, transparent 80%)',
+          WebkitMaskImage: 'radial-gradient(ellipse at center right, black 20%, transparent 80%)',
         }}
         className="hero-truck-bg"
       >
